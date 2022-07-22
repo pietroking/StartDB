@@ -55,7 +55,7 @@ class Forca {
     //testa caracter de entrada e coloca no vetor letrasChutadas
     let testeCaracter = alfabeto.find(caracter => caracter == letra)//busca se o caracter digitado é uma das entradas validas
     if ((testeCaracter !== undefined) && (testeCaracter !== this.letrasChutadas.find(caracter => caracter == letra))) {//verifica se a letra ja foi chutada
-      this.letrasChutadas.push(letra);//add na lista de letras chutadas a letra em MAIUSCULO
+      this.letrasChutadas.push(letra);//add na lista de letras chutadas a letra
       let acerto = false;
         for(let i=0; i<this.palavraSecreta.length; i++){//percorre a palavra pra ver se existe mais de uma ocorrencia da letra chutada
           if(this.palavraSecreta[i] === testeCaracter){//verifica se a posicao da na palavra correspnde a letra chutada
